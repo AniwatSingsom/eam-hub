@@ -1,6 +1,125 @@
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+if identifyexecutor()~="Codex" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GalacticHypernova/Guardian/main/MainProd"))()
+  else
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GalacticHypernova/Guardian/main/CodexTest"))()
+  end
+  
+  --[=[
+  
+  ██╗░░░██╗███╗░░██╗░█████╗░
+  ██║░░░██║████╗░██║██╔══██╗
+  ██║░░░██║██╔██╗██║██║░░██║
+  ██║░░░██║██║╚████║██║░░██║
+  ╚██████╔╝██║░╚███║╚█████╔╝
+  ░╚═════╝░╚═╝░░╚══╝░╚════╝░
+  
+      _G.Settings = {
+          Skill = {
+              SKillZ = true,
+              SkillX = true,
+              SkillC = true,
+              SkillV = true,
+              SkillF = true
+          },
+          Stats = {
+              Auto_Melee = true,
+              Auto_Defense = true,
+              Auto_Sword = true,
+              Auto_Gun = true,
+              Auto_Devil_Fruit = true
+          },
+          SettingINFO = {
+              ["AutoDisable_Text Damage"] = true,
+              BypassTP = false,
+              BringMobs = true,
+              FastAttack = {
+                  Toggle = true,
+                  Value = "0.15"
+              }
+          },
+          Main = {
+              Level = {
+                  FpsBooster = false,
+                  Auto_Redeem = true,
+                  Auto_Level = true,
+                  Weapon = "Melee" -- Melee , Sword , BloxFruit.
+              },
+          
+              Auto_Factory = false,
+              Auto_Tushita = false,
+              Auto_Yama = false,
+              Auto_HallowSycthe = false,
+              Auto_Mirage = false,
+              Auto_W = false,
+              Auto_Elite = false,
+              Auto_Piranha = false,
+              Auto_Terrirshark = false,
+              Auto_VatChatKiDi = false,
+              Auto_CakePrince = false,
+              Auto_Bone = false
+          },
+          UI = {
+              Button = true
+          }
+      }
+  
+  ]=]
+  
+  if not _G.Settings then
+      _G.Settings = {
+          Skill = {
+              SKillZ = true,
+              SkillX = true,
+              SkillC = true,
+              SkillV = true,
+              SkillF = true
+          },
+          Stats = {
+              Auto_Melee = true,
+              Auto_Defense = true,
+              Auto_Sword = true,
+              Auto_Gun = true,
+              Auto_Devil_Fruit = true
+          },
+          SettingINFO = {
+              ["AutoDisable_Text Damage"] = true,
+              BypassTP = false,
+              BringMobs = true,
+              FastAttack = {
+                  Toggle = true,
+                  Value = "0.15"
+              }
+          },
+          Main = {
+              Level = {
+                  FpsBooster = false,
+                  Auto_Redeem = false,
+                  Auto_Level = false,
+                  Weapon = "Melee" -- Melee , Sword , BloxFruit.
+              },
+          
+              Auto_Factory = false,
+              Auto_Tushita = false,
+              Auto_Yama = false,
+              Auto_HallowSycthe = false,
+              Auto_Mirage = false,
+              Auto_W = false,
+              Auto_Elite = false,
+              Auto_Piranha = false,
+              Auto_Terrirshark = false,
+              Auto_VatChatKiDi = false,
+              Auto_CakePrince = false,
+              Auto_Bone = false
+          },
+          UI = {
+              Button = true
+          }
+      }
+  end
+  
+  local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+  local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+  local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
   --------------------------------------------------------------------------------------------------------------------------------------------
   local Window = Fluent:CreateWindow({
       Title = "TEST",
@@ -25,7 +144,6 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
   }
   local Options = Fluent.Options
   
-  do
   --------------------------------------------------------------------------------------------------------------------------------------------
       repeat wait() until game.Players
       repeat wait() until game.Players.LocalPlayer
@@ -6298,6 +6416,10 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
   end
   Number = math.random(1, 1000000)
   
+  
+  
+  
+  
   Tabs.Misc:AddButton({
       Title = "Hop Server Low Player",
       Description = "",
@@ -6372,16 +6494,17 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
           game.Players.localPlayer.PlayerGui.Main.Colors.Visible = true
       end
   })
-
+  
+  
+  
   Tabs.Misc:AddButton({
-    Title = "Title Name",
-    Description = "",
-    Callback = function()
-        local args = {
-            [1] = "getTitles"
-        }
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-        game.Players.localPlayer.PlayerGui.Main.Titles.Visible = true
-     end
-   })
-end
+      Title = "Title Name",
+      Description = "",
+      Callback = function()
+          local args = {
+              [1] = "getTitles"
+          }
+          game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+          game.Players.localPlayer.PlayerGui.Main.Titles.Visible = true
+      end
+  })
