@@ -27,7 +27,7 @@ if not _G.Settings then
             Level = {
                 FpsBooster = false,
                 Auto_Redeem = false,
-                Auto_Level = false,
+                Auto_Level = true,
                 Weapon = "Melee" -- Melee , Sword , BloxFruit.
             },
 
