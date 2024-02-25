@@ -10,13 +10,13 @@ if not _G.Settings then
         Stats = {
             Auto_Melee = true,
             Auto_Defense = true,
-            Auto_Sword = false,
-            Auto_Gun = false,
-            Auto_Devil_Fruit = false
+            Auto_Sword = true,
+            Auto_Gun = true,
+            Auto_Devil_Fruit = true
         },
         SettingINFO = {
             ["AutoDisable_Text Damage"] = true,
-            BypassTP = true,
+            BypassTP = false,
             BringMobs = true,
             FastAttack = {
                 Toggle = true,
@@ -27,7 +27,7 @@ if not _G.Settings then
             Level = {
                 FpsBooster = false,
                 Auto_Redeem = false,
-                Auto_Level = true,
+                Auto_Level = false,
                 Weapon = "Melee" -- Melee , Sword , BloxFruit.
             },
 
@@ -2671,7 +2671,7 @@ do
         ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
         ImageButton.Size = UDim2.new(0.0627121851, 0, 0.107579626, 0)
-        ImageButton.Image = "rbxassetid://16506126180"
+        ImageButton.Image = "rbxassetid://5747127665"
 
         UICorner.CornerRadius = UDim.new(0, 30)
         UICorner.Parent = ImageButton
@@ -2745,7 +2745,7 @@ do
         --------------------------------------------------------------------------------------------------------------------------------------------
         -- Hehe
         local posX = 0
-        local posY = 30
+        local posY = 10
         local posZ = 0
     else
     end
