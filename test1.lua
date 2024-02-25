@@ -10,17 +10,17 @@ if not _G.Settings then
         Stats = {
             Auto_Melee = true,
             Auto_Defense = true,
-            Auto_Sword = true,
-            Auto_Gun = true,
-            Auto_Devil_Fruit = true
+            Auto_Sword = false,
+            Auto_Gun = false,
+            Auto_Devil_Fruit = false
         },
         SettingINFO = {
             ["AutoDisable_Text Damage"] = true,
-            BypassTP = false,
+            BypassTP = true,
             BringMobs = true,
             FastAttack = {
                 Toggle = true,
-                Value = "0.15"
+                Value = "0.01"
             }
         },
         Main = {
@@ -2971,6 +2971,10 @@ do
     UseCode("Sub2NoobMaster123")
     UseCode("Sub2OfficialNoobie")
     UseCode("Sub2UncleKizaru")
+    UseCode("REWARDFUN")
+    UseCode("DEVSCOOKING")
+    UseCode("TheGreatAce")
+
 
     Tabs.Main:AddButton({
         Title = "Fps Booster",
