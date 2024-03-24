@@ -4,9 +4,9 @@ SX_VM_CNONE();
 
 local libraryLoadAt = tick();
 
-local Signal = sharedRequire('utils/Signal.lua');
-local Services = sharedRequire('utils/Services.lua');
-local KeyBindVisualizer = sharedRequire('classes/KeyBindVisualizer.lua');
+local Signal = sharedRequire('https://raw.githubusercontent.com/AniwatSingsom/eam-hub/main/utils/Signal.lua');
+local Services = sharedRequire('https://raw.githubusercontent.com/AniwatSingsom/eam-hub/main/utils/Services.lua');
+local KeyBindVisualizer = sharedRequire('https://raw.githubusercontent.com/AniwatSingsom/eam-hub/main/classes/KeyBindVisualizer.lua');
 
 local CoreGui, Players, RunService, TextService, UserInputService, ContentProvider, HttpService, TweenService, GuiService, TeleportService = Services:Get('CoreGui', 'Players', 'RunService', 'TextService', 'UserInputService', 'ContentProvider', 'HttpService', 'TweenService', 'GuiService', 'TeleportService');
 
